@@ -8,7 +8,6 @@ class Anagram
   
   def match(array_of_words)
     
-    
   end
   
 
