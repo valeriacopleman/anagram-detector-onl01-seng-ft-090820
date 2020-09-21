@@ -4,17 +4,12 @@ class Anagram
   
   def initialize(words)
     @words = words
-    @letters = @words.split(" ").sort
   end
   
-  #def match(array_of_words)
-    def match(possible_anagrams)
-    possible_anagrams.select do |possible_anagram|
-      @letters == possible_anagram.split(" ").sort
-    end
+  def match(list)
+    list.select do |single_word|
+      single_word.chars.sort == @words.char.sort
   end
-  #end
-  
-
+end
 
 end
